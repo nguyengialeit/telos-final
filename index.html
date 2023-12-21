@@ -1,0 +1,343 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/output.css" />
+    <style>
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        position: relative;
+      }
+      .menu {
+        display: flex;
+        align-items: center;
+        height: 72px;
+        width: 100%;
+        max-width: 1110px;
+      }
+      .logo {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .menuText {
+        display: flex;
+        gap: 32px;
+      }
+      .menuSocial {
+        display: flex;
+        gap: 14px;
+      }
+      .hero {
+        margin-top: 80px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 1110px;
+      }
+      .column {
+        flex: 1;
+      }
+      .left {
+        display: flex;
+        flex-direction: column;
+      }
+      .title {
+        font-family: Inter;
+        font-size: 72px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 98px;
+      }
+      .description {
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+        margin-top: 16px;
+      }
+      .button {
+        width: 154px;
+        border-radius: 6px;
+        background-color: #8c30f5;
+        margin-top: 32px;
+        border: none;
+        padding: 12px 32px;
+        color: white;
+      }
+      .img {
+        width: 120%;
+      }
+      .circle {
+        width: 740px;
+        height: 740px;
+        background-color: #8c30f5;
+        border-radius: 100%;
+        position: absolute;
+        top: -100px;
+        right: -100px;
+        opacity: 0.5;
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body class="wrapper overflow-x-hidden overflow-y-auto w-full">
+    <div class="menu">
+      <div class="menuText">
+        <div>About</div>
+        <div>Pricing</div>
+        <div>Contact</div>
+      </div>
+      <img src="images/logo.png" alt="" class="logo" />
+      <div class="menuSocial">
+        <img src="images/ico_social_1.png" alt="" />
+        <img src="images/ico_social_2.png" alt="" />
+        <img src="images/ico_social_3.png" alt="" />
+        <img src="images/ico_social_4.png" alt="" />
+      </div>
+    </div>
+    <div class="hero">
+      <div class="column left">
+        <div class="title">Landing page UI kit</div>
+        <div class="description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in
+          et, lectus sit lorem id integer.
+        </div>
+        <button class="button">Get Started</button>
+      </div>
+      <div class="column">
+        <img src="images/img.png" alt="" class="img" />
+      </div>
+    </div>
+    <div class="circle"></div>
+    <div class="w-full flex flex-col items-center mt-16 py-14 bg-background">
+      <div class="text-2xl font-extrabold">Our Clients</div>
+      <div class="mt-2 text-lead1">
+        We have been working with some Fortune 500 clients
+      </div>
+      <div class="mt-12 flex gap-x-6">
+        <div
+          class="flex flex-col justify-center gap-6 flex-wrap-reverse h-auto lg:h-[300px]"
+        >
+          <img src="images/ico_logo.png" alt="" />
+          <img src="images/ico_logo.png" alt="" />
+          <img src="images/ico_logo.png" alt="" />
+        </div>
+        <div class="flex flex-col justify-center gap-y-6">
+          <img src="images/ico_logo.png" alt="" />
+          <img src="images/ico_logo.png" alt="" />
+          <img src="images/ico_logo.png" alt="" />
+        </div>
+        <div
+          class="flex flex-col justify-center gap-6 flex-wrap h-auto lg:h-[300px]"
+        >
+          <img src="images/ico_logo.png" alt="" />
+          <img src="images/ico_logo.png" alt="" />
+          <img src="images/ico_logo.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="container flex flex-col gap-y-10 py-16">
+      <div class="text-h2 font-bold">
+        Experience is the key to customer lifetime value.
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
+        <div class="flex flex-col">
+          <div>
+            <img src="images/ico_cover.png" alt="" class="w-full" />
+          </div>
+          <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        </div>
+        <div class="flex flex-col">
+          <div>
+            <img src="images/ico_cover.png" alt="" class="w-full" />
+          </div>
+          <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        </div>
+        <div class="flex flex-col">
+          <div>
+            <img src="images/ico_cover.png" alt="" class="w-full" />
+          </div>
+          <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        </div>
+        <div class="flex flex-col">
+          <div>
+            <img src="images/ico_cover.png" alt="" class="w-full" />
+          </div>
+          <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        </div>
+      </div>
+    </div>
+    <div class="w-full flex justify-center">
+      <div class="container flex flex-col items-center">
+        <div class="text-h2 font-bold w-full mt-20">Recent works</div>
+        <div
+          class="w-full grid grid-cols-1 md:grid-cols-3 mt-12 mb-20 gap-2 md:gap-7"
+        >
+          <img
+            src="images/ico_cover_1.png"
+            alt=""
+            class="row-span-1 md:row-span-2 w-full h-full"
+          />
+          <img
+            src="images/ico_cover_2.png"
+            alt=""
+            class="col-span-1 md:col-span-2 w-full h-full"
+          />
+          <img
+            src="images/ico_cover_3.png"
+            alt=""
+            class="col-span-1 md:col-span-1 w-full h-full"
+          />
+          <img
+            src="images/ico_cover_4.png"
+            alt=""
+            class="row-span-1 md:row-span-2 w-full h-full"
+          />
+          <img
+            src="images/ico_cover_5.png"
+            alt=""
+            class="row-span-1 col-span-1 md:row-span-2 md:col-span-2 w-full h-full"
+          />
+          <img
+            src="images/ico_cover_6.png"
+            alt=""
+            class="row-span-1 md:row-span-1 w-full h-full"
+          />
+        </div>
+        <div
+          class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-7 my-14"
+        >
+          <div class="flex flex-col">
+            <div class="text-h2 font-extrabold">40+</div>
+            <div class="text-body1">Happy clients</div>
+            <div class="w-full h-[1px] bg-black mt-4"></div>
+          </div>
+          <div class="flex flex-col">
+            <div class="text-h2 font-extrabold">540+</div>
+            <div class="text-body1">Projects Completed</div>
+            <div class="w-full h-[1px] bg-black mt-4"></div>
+          </div>
+          <div class="flex flex-col">
+            <div class="text-h2 font-extrabold">300</div>
+            <div class="text-body1">Dedicated Members</div>
+            <div class="w-full h-[1px] bg-black mt-4"></div>
+          </div>
+          <div class="flex flex-col">
+            <div class="text-h2 font-extrabold">25+</div>
+            <div class="text-body1">Awards Won</div>
+            <div class="w-full h-[1px] bg-black mt-4"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-full container py-16 flex gap-8">
+      <div class="flex-1 grid grid-cols-6 gap-5">
+        <img
+          src="images/cover_1.png"
+          alt=""
+          class="col-span-6 md:col-span-3 w-full h-full animate__animated animate__fadeInLeft"
+        />
+        <img
+          src="images/cover_2.png"
+          alt=""
+          class="col-span-6 md:col-span-3 w-full self-end animate__animated animate__fadeInLeft"
+        />
+        <img
+          src="images/cover_3.png"
+          alt=""
+          class="col-span-6 md:col-span-2 w-full animate__animated animate__fadeInLeft"
+        />
+        <img
+          src="images/cover_4.png"
+          alt=""
+          class="col-span-6 md:col-span-4 w-full h-full animate__animated animate__fadeInLeft"
+        />
+      </div>
+      <div class="flex-1 flex flex-col justify-center px-12">
+        <div class="font-bold text-h3">Headline</div>
+        <div class="mt-4 text-lead1 font-test">
+          Specially developed to help restore a more youthful appearance with
+          improved radiance and bounce.
+        </div>
+        <div class="flex gap-x-4 items-center mt-10">
+          <img src="images/ico_1.png" alt="" class="w-8 h-8" />
+          <div class="flex flex-col gap-y-1">
+            <div class="text-h6 font-medium">Headline</div>
+            <div class="text-base">One line description</div>
+          </div>
+        </div>
+        <div class="flex gap-x-4 items-center mt-6">
+          <img src="images/ico_1.png" alt="" class="w-8 h-8" />
+          <div class="flex flex-col gap-y-1">
+            <div class="text-h6 font-medium">Headline</div>
+            <div class="text-base">One line description</div>
+          </div>
+        </div>
+        <div
+          class="py-2.5 px-5 bg-purple-100 rounded-lg flex justify-center items-center mt-10 text-white w-max cursor-pointer"
+        >
+          Buy now
+        </div>
+      </div>
+    </div>
+    <div class="w-full bg-black py-16 flex flex-col items-center text-white">
+      <div
+        class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12"
+      >
+        <div class="flex flex-col gap-y-4">
+          <div class="text-xl">Product</div>
+          <div class="flex flex-col gap-y-3">
+            <div class="wow animate__animated animate__fadeInLeft">
+              Overview
+            </div>
+            <div class="wow animate__animated animate__fadeInLeft">
+              Features
+            </div>
+            <div class="wow animate__animated animate__fadeInLeft">
+              Tutorials
+            </div>
+            <div class="wow animate__animated animate__fadeInLeft">Pricing</div>
+            <div class="wow animate__animated animate__fadeInLeft">
+              Releases
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-y-4">
+          <div class="text-xl">Product</div>
+          <div class="flex flex-col gap-y-3">
+            <div>Overview</div>
+            <div>Features</div>
+            <div>Tutorials</div>
+            <div>Pricing</div>
+            <div>Releases</div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-y-4">
+          <div class="text-xl">Product</div>
+          <div class="flex flex-col gap-y-3">
+            <div>Overview</div>
+            <div>Features</div>
+            <div>Tutorials</div>
+            <div>Pricing</div>
+            <div>Releases</div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-y-4">
+          <div class="text-xl">Product</div>
+          <div class="flex flex-col gap-y-3">
+            <div>Overview</div>
+            <div>Features</div>
+            <div>Tutorials</div>
+            <div>Pricing</div>
+            <div>Releases</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
